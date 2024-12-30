@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    const element = document.getElementById('myDiv');
+    if (element) {
+      const myVar = element.innerHTML;
+      console.log(myVar); // This will work
+    } else {
+      console.log('Element not found');
+    }
+  </script>
+</body>
+</html>
